@@ -33,8 +33,6 @@ namespace S3Sync
         {
             AssemblyName thisAssembly = Assembly.GetExecutingAssembly().GetName();
             string thisVersion = thisAssembly.Version.ToString();
-            if (args.Count() == 0)
-                args = "-AWSAccessKeyId AKIAJPJIQXPOAFCHAYQA -AWSSecretAccessKey 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 -Push -BucketName galvanisedbucket -LocalFolderPath \"e:\\Backup\\\" -S3FolderPath \"Backup\" -DeleteEmptyFolders -ThreadCount 2 -MaxTransfer 10 -Dry2Run -LogFile \"s3.log\"".Split(' ');
 
             ArgumentList Arguments = new ArgumentList(args);
 
